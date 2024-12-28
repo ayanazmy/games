@@ -17,7 +17,8 @@ export class Games {
     }
 
     getGames(category) {
-        document.querySelector(".loading").classList.replace("d-none", "d-block");
+        document.querySelector(".loading").classList.add("d-block");
+        document.querySelector(".loading").classList.remove("d-none");
         let api = `https://free-to-play-games-database.p.rapidapi.com/api/games?category=${category}`;
         const options = {
             method: 'GET',
@@ -60,7 +61,8 @@ export class Games {
             });
 
             setTimeout(() => {
-                document.querySelector(".loading").classList.replace("d-block", "d-none");
+                document.querySelector(".loading").classList.add("d-none");
+                document.querySelector(".loading").classList.remove("d-block");
             }, 500);
 
         })

@@ -7,7 +7,8 @@ export class GameDetails {
     }
 
     getDetails(id) {
-        document.querySelector(".loading").classList.replace("d-none", "d-block");
+        document.querySelector(".loading").classList.add("d-block");
+        document.querySelector(".loading").classList.remove("d-none");
         let api = `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`;
         const options = {
             method: 'GET',
@@ -53,7 +54,8 @@ export class GameDetails {
             this.details.classList.replace("d-none", "d-block");
 
             setTimeout(() => {
-                document.querySelector(".loading").classList.replace("d-block", "d-none");
+                document.querySelector(".loading").classList.add("d-none");
+                document.querySelector(".loading").classList.remove("d-block");
             }, 500);
         })
     }
