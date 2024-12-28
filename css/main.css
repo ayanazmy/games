@@ -93,6 +93,8 @@ nav {
 
 .loading {
     background: var(--dark-bg);
+    min-height: 100%;
+    width: 100%;
     .loader {
         --d: 22px;
         width: 4px;
