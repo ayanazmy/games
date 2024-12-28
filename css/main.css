@@ -1,0 +1,119 @@
+:root {
+    --blue: #3a497b;
+    --dark-bg: #272b30;
+    --dimmed: #919398;
+}
+
+body {
+    font-family: "Nerko One", serif;
+    background-color: var(--dark-bg);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-img img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+nav {
+    background-color: var(--blue);
+
+    .logo {
+        a {
+            font-weight: 100;
+        }
+
+        .logo-img {
+            width: 15%;
+        }
+    }
+
+}
+
+.navbar-nav .nav-link {
+    &:hover {
+        color: #09c;
+    }
+}
+
+.navbar-nav .nav-link.active {
+    color: #09c;
+}
+
+.card {
+    background-color: var(--dark-bg);
+    color: var(--dimmed);
+    cursor: pointer;
+    transition: all 0.7s;
+    &:hover {
+        transform: scale(1.1);
+        .card-img-top {
+            filter: saturate(1);
+        }
+
+        .free {
+            background-color: #09c;
+        }
+    }
+
+    .btn {
+        padding-block: 0;
+        background-color: var(--blue);
+    }
+
+    .card-img-top {
+        filter: saturate(0.2);
+        transition: all 0.7s;
+    }
+
+    .free {
+        transition: all 0.7s;
+    }
+    .card-footer {
+        color: #fff;
+        span {
+            font-weight: 100;
+            font-size: 15px;
+            background-color: #32383e;
+            padding-inline: 5px;
+        }
+    }
+}
+
+
+.fa-xmark {
+    cursor: pointer;
+    color: var(--dimmed);
+}
+
+.loading {
+    background: var(--dark-bg);
+    .loader {
+        --d: 22px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        color: #09c;
+        box-shadow:
+            calc(1*var(--d)) calc(0*var(--d)) 0 0,
+            calc(0.707*var(--d)) calc(0.707*var(--d)) 0 1px,
+            calc(0*var(--d)) calc(1*var(--d)) 0 2px,
+            calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+            calc(-1*var(--d)) calc(0*var(--d)) 0 4px,
+            calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+            calc(0*var(--d)) calc(-1*var(--d)) 0 6px;
+        animation: l27 1s infinite steps(8);
+    }    
+}
+
+
+@keyframes l27 {
+    100% {
+        transform: rotate(1turn)
+    }
+}

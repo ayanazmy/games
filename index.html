@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <div class="loading d-flex justify-content-center align-items-center position-absolute top-0 start-0 end-0 bottom-0 vh-100 z-3 d-none">
+        <div class="loader"></div>
+    </div>
+    <!-- header section -->
+    <div class="header-img w-100">
+        <img src="./imgs/wraper.png" alt="" class="w-100">
+    </div>
+
+    <div class="position-sticky top-0 z-2 navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-dark rounded-4 w-75 mx-auto shadow">
+            <div class="container">
+                <div class="logo d-flex align-items-center">
+                    <div class="logo-img me-2">
+                        <img src="./imgs/logo-sm.png" alt="logo" class="w-100">
+                    </div>
+                    <a class="navbar-brand " href="#">Game Reviews</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" aria-current="page" href="#">MMORPG</a>
+                        <a class="nav-link" href="#">SHOOTER</a>
+                        <a class="nav-link" href="#">SAILING</a>
+                        <a class="nav-link" href="#">PERMADEATH</a>
+                        <a class="nav-link" href="#">SUPERHERO</a>
+                        <a class="nav-link" href="#">PIXEL</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- all games section -->
+    <section class="container my-5 games">
+        <div class="row align-items-center all-games">
+        </div>
+    </section>
+
+    <!-- game detail -->
+    <section class="position-relative p-4 d-none details">
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js" type="module"></script>
+</body>
+
+</html>
